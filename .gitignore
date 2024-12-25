@@ -1,3 +1,3 @@
 # to ignore any file, add the path here
 node_modules/
-
+.env

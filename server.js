@@ -52,7 +52,7 @@
 // });
 
 // app.get('/idli', function (req, res) {
-//     res.send('Enjoy your idli😊')
+//     res.send('Enjoy your idli')
 // });
 
 // app.post('/person', (req, res) => {
@@ -77,9 +77,12 @@
 const express = require('express');
 const app = express();
 const db = require('./db.js');
+require('dotenv').config();
 
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());
+
+const PORT = process.env.PORT || 3000;
 
 app.get('/', function (req, res) {
     res.send('Hello World');
@@ -88,6 +91,6 @@ app.get('/', function (req, res) {
 const personroutes = require('./routes/personroutes.js');
 app.use('/person', personroutes);
 
-app.listen(3000, () => {
-    console.log("Server is live");
+app.listen(PORT, () => {
+    console.log(`Server is live with ${PORT}`);
 });
