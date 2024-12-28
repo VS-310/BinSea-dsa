@@ -23,7 +23,7 @@ app.get('/', localAuthMiddleWare, function (req, res) {
 });
 
 const personroutes = require('./routes/personroutes.js');
-app.use('/person', localAuthMiddleWare, personroutes);
+app.use('/person', personroutes);
 
 app.listen(PORT, () => {
     console.log(`Server is live with port ${PORT}`);
