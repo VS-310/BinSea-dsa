@@ -1,0 +1,21 @@
+{
+  "name": "voting_app",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/VS-310/Random#readme",
+  "bugs": {
+    "url": "https://github.com/VS-310/Random/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VS-310/Random.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  }
+}
