@@ -1,4 +1,6 @@
 # to ignore any file, add the path here
 
-node_js_deployed/node_modules/
-node_js_deployed/.env
+hotels/node_modules/
+hotels/.env
+voting_app/node_modules/
+voting_app/.env
