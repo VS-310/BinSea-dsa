@@ -1,0 +1,329 @@
+/* body{
+  background-color: #98c0e8;
+  background-image: url(https://th.bing.com/th/id/OIP.d6bl47_NC0oPXaXhyes9JAHaEK?w=324&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7);
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-attachment: fixed;
+  background-size: cover;
+} */
+
+.class1{
+  color:yellow;
+}
+.class2{
+  background-color: green;
+}
+.class3{
+  font-size: 30px;
+}
+
+.conta{
+  display: flex;
+  flex-wrap:wrap;
+}
+
+#box1{
+  background-color: green;
+  color:white;
+}
+
+#box{
+  width:250px;
+  height:250px;
+  text-align: center;
+  font-size: 13em;
+  background-color: aqua;
+  border-radius: 20px;
+  animation-name:colorchange;
+  animation-duration: 2.5s;
+  animation-iteration-count: 2;
+  animation-timing-function: steps(5);
+}
+
+@keyframes slideLeft {
+  from{transform:translateX(200px)}
+}
+@keyframes slideRight {
+  to{transform:translateX(200px)}
+}
+@keyframes slideDown {
+  from{transform:translateY(300px)}
+}
+@keyframes slideUp {
+  to{transform:translateY(300px)}
+}
+@keyframes rotate {
+  50%{transform:rotateZ(360deg)}
+}
+@keyframes grow {
+  50%{transform:scale(2,2)}
+}
+@keyframes shrink {
+  50%{transform:scale(0.5,0.5)}
+}
+@keyframes fade {
+  50%{opacity:0.2}
+}
+@keyframes colorchange {
+  0%{background-color: violet;}
+  20%{background-color: indigo;}
+  40%{background-color: blue;}
+  60%{background-color: green;}
+  80%{background-color: yellow;}
+}
+
+.a{
+  background-color: rgb(245, 7, 7);
+}
+.b{
+  background-color: orange;
+}
+.c{
+  background-color: green;
+}
+.d{
+  background-color: blue;
+}
+
+/* header{
+  background-color: aquamarine;
+  text-align: center;
+  padding: 20px;
+}
+footer{
+  display:block;
+  clear:both;
+  background-color: aquamarine;
+  text-align: center;
+  padding: 20px;
+}
+.navb{
+  background-color: black;
+  height: 50px;
+} */
+
+/* @media screen and (max-width:600px) {
+  aside,section,article{
+    width:100%;
+  }
+} */
+
+aside{
+  width:20%;
+  float:left;
+  padding:10px;
+}
+section{
+  width:40%;
+  float:left;
+  padding:10px;
+}
+article{
+  width:40%;
+  float:left;
+  padding:10px;
+}
+
+h1{
+  text-align: center;
+}
+
+.navbar ul{
+  list-style-type:none;
+  background-color: rgb(104, 104, 103);
+  padding: 0px;
+  margin:0px;
+  overflow:hidden;
+  /* display:inline-block; */
+}
+.navbar a{
+  color:azure;
+  text-decoration: none;
+  padding:15px;
+  display: block;
+  text-align: center;
+}
+.navbar a:hover{
+  background-color: black;
+}
+.navbar li{
+  float:left ;
+}
+
+.dropdown button{
+  background-color: antiquewhite;
+  color: black;
+  padding:10px;
+  border:none;
+  cursor:pointer;
+}
+.dropdown a{
+  display:block;
+  color:black;
+  text-decoration:none;
+  /* border:2px black solid; */
+  display: inline;
+  padding:10px;
+}
+.dropdown .content{
+  display:none;
+  position: absolute;
+}
+.dropdown:hover .content{
+  display:block;
+}
+
+.pagination{
+  text-align: center;
+}
+.pagination a{
+  color:rgb(245, 147, 34);
+  background-color: rgb(69, 65, 65);
+  padding:10px;
+  display:inline;
+}
+
+.pagination a:hover{
+  background-color: rgb(245, 147, 34);
+  color: rgb(69, 65, 65);
+}
+
+h1::first-letter{
+  font-size: 40px;
+  font-family:fantasy;
+}
+/* p::first-line{
+  background-color: pink;
+} */
+p::selection{
+  background-color: black;
+  color:yellow;
+}
+#one::after{
+  content: "tether";
+}
+
+#greeting p{
+  background-color: aqua;
+  padding: 5px;
+  display:none;
+}
+#greeting:hover p{
+  display:inline;
+}
+
+/* li:nth-child(2n+1){
+  background-color: yellow;
+} */
+/* li:hover{
+  background-color:lightgreen;
+}
+li:not(:hover){
+  background-color: slategray;
+} */
+
+/* a:link{
+  color:yellow;
+} 
+a:hover{
+  color:red;
+  font-size: 20px;
+}
+a:active{
+  color:yellow;
+} */
+/* a:visited{
+  color:grey;
+} */
+
+/*
+*{
+  color:white;
+} */
+
+#cont{
+  border:3px white solid;
+}
+
+#cont ~ p{
+  background-color: rgb(74, 69, 69);
+}
+
+.box1{
+  width:200px;
+  height:200px;
+  background-color: white;
+  position:relative;
+  top:100px;
+  left:100px;
+}
+
+.box2{
+  width:100px;
+  height:100px;
+  background-color: rgb(225, 245, 112);
+  position:absolute;
+  top:50px;
+  left:50px;
+}
+
+/* h1{
+  color:green;
+  font-family:courier new;
+  background-color:lightgreen;
+  display:inline-block;
+  visibility:hidden; 
+} */
+
+#p1{
+  color:rgb(227, 28, 227);
+  font-family:verdana;
+  font-size:16px;
+  border:3px solid white;
+  border-radius:12px;
+  height:50px;
+  overflow:auto;
+}
+
+#p2{
+  color:rgb(199, 199, 219);
+  font-size:16px;
+  text-shadow: 3px 3px 5px green, -3px -3px 5px yellow;
+  border:3px solid white;
+  border-radius:12px;
+  height:50px;
+  overflow:clip;
+  overflow-clip-margin:20px;
+}
+
+#img1{
+  float:left;
+  margin:10px;
+  border:3px black dashed;
+}
+
+#p3{
+  color:blue;
+  margin-top:30px;
+  border:3px solid white;
+  border-radius:12px;
+  height:50px;
+  overflow:hidden;
+}
+
+#p4{
+  color:red;
+  border:3px solid white;
+  border-radius:12px;
+  padding:5px;
+  height:100px;
+  overflow:scroll;
+}
+
+/* .odd{
+  color:purple;
+}
+
+.even{
+  color:red;
+} */

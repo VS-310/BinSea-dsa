@@ -1,0 +1,51 @@
+body{
+    background-color: rgb(47, 110, 204);
+    color:white;
+    text-align: center;
+}
+
+table{
+    background-color: azure;
+    color:black;
+    margin: auto;
+    border-radius: 3px;
+}
+
+h1{
+    color:rgb(33, 32, 34);
+}
+
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+}
+
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap:1.5vmin;
+}
+
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 5px;
+    border:none;
+    font-size: 10vmin;
+    background-color: white; 
+    color:black;
+}
+
+#reset,#play-again{
+    height:7vmin;
+    border-radius: 5px;
+    border:none;
+}
+
+.hide {
+    display: none;
+}
