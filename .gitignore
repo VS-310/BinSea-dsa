@@ -2,3 +2,5 @@
 
 hotels/node_modules/
 hotels/.env
+movie_app\backend\node_modules
+movie_app\backend\.env
