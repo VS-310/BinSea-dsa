@@ -2,9 +2,6 @@
 
 hotels/node_modules/
 hotels/.env
-movie_app/backend/node_modules/
-movie_app/backend/.env
-movie_app/frontend/node_modules/
 hello_campus_gemini/node_modules/
 hello_campus_gemini/.env
 image_upload/node_modules/
