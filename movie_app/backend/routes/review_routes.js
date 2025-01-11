@@ -18,15 +18,32 @@ router.get('/', async (req, res) => {
     }
 });
 
-router.post('/new', async (req, res) => {
+router.post('/:id', async (req, res) => {
     try {
-        const review = new Review(req.body);
+        const id = req.params.id;
+        const {rating, title} = req.body;
+        if(!rating || !title){
+            return res.status(400).json({error: 'title and rating are required'});
+        }
+        const review = new Review({
+            title,
+            id: id,
+            rating,
+        });
+
         const response = await review.save();
+
         console.log("Working Fine");
-        res.status(200).json({response: response});
+        res.status(200).json({message:"Review saved successfully", response: response});
     } 
     catch (err) {
         console.log(err);
+        if(err.name === "ValidationError"){
+            return res.status(400).json({
+                error: "Validation Error",
+                message: err.message,
+            });
+        }
         res.status(400).json({error:'Internal server error'});
     }
 });

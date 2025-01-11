@@ -2,14 +2,14 @@ const express = require('express');
 const app = express();
 const db = require('./db.js');
 require('dotenv').config({ path: './.env' });
-const cors = require('cors')();
 
+const cors = require('cors')();
 app.use(cors);
-app.use(express.json());
+
+app.use(express.static(path.join(__dirname, '../frontend')));
 
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());
-
 
 const PORT = process.env.PORT || 3000;
 
@@ -39,6 +39,7 @@ app.use('/api', require('./routes/review_routes.js'));
 
 app.get('/', (req, res) => {
     res.send('Welcome to GOKUTO!');
+    res.sendFile(path.join(__dirname, '../frontend/index.html'));
 });
 
 app.listen(PORT, () => {
