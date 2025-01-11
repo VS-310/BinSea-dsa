@@ -7,3 +7,4 @@ movie_app/backend/.env
 movie_app/frontend/node_modules/
 hello_campus_gemini/node_modules/
 hello_campus_gemini/.env
+image_upload/node_modules/
